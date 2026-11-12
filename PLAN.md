@@ -14,12 +14,12 @@
 ## Function Signatures (The Contract)
 *Do not change these signatures without telling the other person.*
 
-### Part A (Her — Input & UI)
+### Part A (VARNICA — Input & UI)
 - `extract_text(pdf_path: str) -> str` (in `src/extract.py`)
 - `clean_text(text: str) -> str` (in `src/clean.py`)
 - `app.py` (Streamlit UI calling Part B's functions)
 
-### Part B (Me — Analysis & Scoring)
+### Part B (ISHIKA — Analysis & Scoring)
 - `load_skills(path: str) -> list[str]` (in `src/match.py`)
 - `match_skills(text: str, skills: list[str]) -> set[str]` (in `src/match.py`)
 - `similarity(resume: str, jd: str) -> float` (in `src/score.py`)
