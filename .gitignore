@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+samples_out.txt
+scratch*.py
+
+run_scores.py
+sample_data/resume.pdf
