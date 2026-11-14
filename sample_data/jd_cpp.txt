@@ -1,0 +1,8 @@
+Senior C++ / .NET Software Engineer
+
+We are seeking a Software Engineer proficient in C++, C#, and the .NET ecosystem to build high-performance backend services and native system components.
+
+Requirements:
+- 3+ years of hands-on software development experience with C++ (C++17/20) and C#.
+- Strong experience building scalable APIs and services in .NET / .NET Core.
+- Familiarity with memory management, multithreading, and C++/C# interoperability.
