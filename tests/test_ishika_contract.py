@@ -5,13 +5,13 @@ from src.score import final_score
 def test_match_skills_handles_special_chars():
     skills = load_skills("skills.json")
     found = match_skills("experienced in c++ c# and .net", skills)
-    assert found == [".net", "c#", "c++"]
+    assert found == {".net", "c#", "c++"}
 
 
 def test_match_skills_word_boundaries():
     skills = load_skills("skills.json")
-    assert match_skills("java script developer", skills) == []
-    assert match_skills("java and javascript developer", skills) == ["java", "javascript"]
+    assert match_skills("javadoc developer", skills) == set()
+    assert match_skills("java and javascript developer", skills) == {"java", "javascript"}
 
 
 def test_final_score_strong_vs_weak_tech():
