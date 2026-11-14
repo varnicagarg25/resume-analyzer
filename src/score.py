@@ -8,9 +8,13 @@ SKILLS_PATH = Path(__file__).resolve().parent.parent / "skills.json"
 SIMILARITY_WEIGHT = 0.5
 
 
-def clean_text(text: str) -> str:
-    """Fallback text cleaner until Varnica's extract.py is merged."""
-    return " ".join(text.lower().split())
+from pathlib import Path
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+from src.clean import clean_text
+from src.match import load_skills, match_skills
 
 
 def similarity(resume: str, jd: str) -> float:
