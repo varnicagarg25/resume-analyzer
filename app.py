@@ -4,6 +4,7 @@ import streamlit as st
 
 import src.score as score_mod
 from src.extract import extract_text
+from src.score import final_score
 from src.validate import check_resume
 
 SKILL_WEIGHT = getattr(score_mod, "SKILL_WEIGHT", 0.6)
